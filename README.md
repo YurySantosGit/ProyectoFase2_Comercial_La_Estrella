@@ -4,7 +4,9 @@
 **Curso:** Bases de Datos 1  
 **Proyecto:** Fase 2  
 **Nombre:** Yury Urbano Santos Chagil
-**Carne:** 202113318  
+**Carne:** 202113318
+**Repositorio GitHub:**  
+https://github.com/YurySantosGit/ProyectoFase2_Comercial_La_Estrella  
 
 
 ---
