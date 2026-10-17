@@ -1,0 +1,2597 @@
+{
+  "info": {
+    "_postman_id": "349f0c04-b132-4418-af4f-1fc2eaf4cb42",
+    "name": "Comercial La Estrella - Fase 2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30922282",
+    "_collection_link": "https://go.postman.co/collection/30922282-349f0c04-b132-4418-af4f-1fc2eaf4cb42?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "PAIS",
+      "item": [
+        {
+          "name": "Obtener paises",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_PA\": 99,\r\n  \"NOMBRE_PA\": \"PAIS_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/paises",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "paises"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener pais por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/paises/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "paises",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear pais",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_PA\": 99,\r\n  \"NOMBRE_PA\": \"PAIS_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/paises",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "paises"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar pais",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_PA\": \"PAIS_PRUEBA_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/paises/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "paises",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar pais",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/paises/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "paises",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "TIPO_TIENDA",
+      "item": [
+        {
+          "name": "Obtener tipos de tienda",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-tienda",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-tienda"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener tipo de tienda por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-tienda/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-tienda",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear tipo de tienda",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_TIP_TIE\": 98,\r\n  \"NOMBRE_TIP_TIE\": \"TIPO_TIENDA_NUEVO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-tienda",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-tienda"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar tipo de tienda",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_TIP_TIE\": \"TIPO_TIENDA_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-tienda/98",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-tienda",
+                "98"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar tipo de tienda",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-tienda/98",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-tienda",
+                "98"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "TIPO_IDENTIFICACION",
+      "item": [
+        {
+          "name": "Obtener tipos de identificacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-identificacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-identificacion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear tipo de identificacion",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_TIP_IDE\": 99,\r\n  \"NOMBRE_TIP_IDE\": \"TIPO_IDENTIFICACION_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-identificacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-identificacion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener tipo de identificacion por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-identificacion/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-identificacion",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar tipo de identificacion",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_TIP_IDE\": \"TIPO_IDENTIFICACION_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-identificacion/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-identificacion",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar tipo de identificacion",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tipos-identificacion/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tipos-identificacion",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CARGO",
+      "item": [
+        {
+          "name": "Obtener cargos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cargos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cargos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear cargo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_CAR\": 99,\r\n  \"NOMBRE_CAR\": \"CARGO_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/cargos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cargos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener cargo por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cargos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cargos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar cargo",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_CAR\": \"CARGO_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/cargos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cargos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar cargo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cargos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cargos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CATEGORIA",
+      "item": [
+        {
+          "name": "Obtener categorias",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear categoria",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_CAT\": 99,\r\n  \"NOMBRE_CAT\": \"CATEGORIA_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categorias",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener categoria por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categorias/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categorias",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar categoria",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_CAT\": \"CATEGORIA_EDITADA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categorias/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categorias",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar categoria",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categorias/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categorias",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "MARCA",
+      "item": [
+        {
+          "name": "Obtener marcas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/marcas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear marca",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_MAR\": 99,\r\n  \"NOMBRE_MAR\": \"MARCA_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/marcas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "marcas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener marca por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/marcas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "marcas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar marca",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_MAR\": \"MARCA_EDITADA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/marcas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "marcas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar marca",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/marcas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "marcas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ESTADO_VENTA",
+      "item": [
+        {
+          "name": "Obtener estados de venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/estados-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "estados-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear estado de venta",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_ES_VEN\": 99,\r\n  \"NOMBRE_ES_VEN\": \"ESTADO_VENTA_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/estados-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "estados-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener estado de venta por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/estados-venta/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "estados-venta",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar estado de venta",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_ES_VEN\": \"ESTADO_VENTA_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/estados-venta/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "estados-venta",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar estado de venta",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/estados-venta/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "estados-venta",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "METODO_PAGO",
+      "item": [
+        {
+          "name": "Obtener metodos de pago",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear metodo de pago",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_MET_PAG\": 99,\r\n  \"NOMBRE_MET_PAG\": \"METODO_PAGO_PRUEBA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/metodos-pago",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "metodos-pago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/metodos-pago/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "metodos-pago",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_MET_PAG\": \"METODO_PAGO_EDITADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/metodos-pago/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "metodos-pago",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/metodos-pago/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "metodos-pago",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DEPARTAMENTO",
+      "item": [
+        {
+          "name": "Obtener departamentos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear departamento",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_DEP\": 99,\r\n  \"NOMBRE_DEP\": \"DEPARTAMENTO_PRUEBA\",\r\n  \"ID_PA\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/departamentos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "departamentos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener departamento por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/departamentos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "departamentos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar departamento",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_DEP\": \"DEPARTAMENTO_EDITADO\",\r\n  \"ID_PA\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/departamentos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "departamentos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar departamento",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/departamentos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "departamentos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "MUNICIPIO",
+      "item": [
+        {
+          "name": "Obtener municipios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/municipios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "municipios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear municipio",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_MUN\": 99,\r\n  \"NOMBRE_MUN\": \"MUNICIPIO_PRUEBA\",\r\n  \"ID_DEP\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/municipios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "municipios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar municipio",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_MUN\": \"MUNICIPIO_EDITADO\",\r\n  \"ID_DEP\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/municipios/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "municipios",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar municipio",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/municipios/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "municipios",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener municipio por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PERSONA",
+      "item": [
+        {
+          "name": "Obtener personas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/personas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "personas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear persona",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_PER\": 99,\r\n  \"NOMBRE_PER\": \"PERSONA\",\r\n  \"APELLIDO_PER\": \"PRUEBA\",\r\n  \"TELEFONO\": \"5555-9999\",\r\n  \"CORREO_PER\": \"persona.prueba99@correo.com\",\r\n  \"DIRECCION_PER\": \"DIRECCION_PRUEBA\",\r\n  \"ID_MUN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/personas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "personas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener persona por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar persona",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar persona",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/personas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "personas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "TIENDA",
+      "item": [
+        {
+          "name": "Obtener tiendas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tiendas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tiendas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear tienda",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_TI\": 99,\r\n  \"NOMBRE_TI\": \"TIENDA_PRUEBA\",\r\n  \"DIRECCION_TI\": \"DIRECCION_TIENDA_PRUEBA\",\r\n  \"TELEFONO_TI\": \"5555-9999\",\r\n  \"ID_TIP_TIE\": 99,\r\n  \"ID_MUN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tiendas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tiendas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tiendas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tiendas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_TI\": \"TIENDA_EDITADA\",\r\n  \"DIRECCION_TI\": \"DIRECCION_TIENDA_EDITADA\",\r\n  \"TELEFONO_TI\": \"5555-8888\",\r\n  \"ID_TIP_TIE\": 99,\r\n  \"ID_MUN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/tiendas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tiendas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar tienda",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/tiendas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "tiendas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "EMPLEADO",
+      "item": [
+        {
+          "name": "Obtener empleados",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear empleado",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_EMP\": 99,\r\n  \"FECHA_CONTRATACION\": \"2026-01-15\",\r\n  \"ID_TI\": 99,\r\n  \"ID_CAR\": 99,\r\n  \"ID_PER\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/empleados",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "empleados"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener empleado por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/empleados/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "empleados",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"FECHA_CONTRATACION\": \"2026-02-01\",\r\n  \"ID_TI\": 99,\r\n  \"ID_CAR\": 99,\r\n  \"ID_PER\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/empleados/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "empleados",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar empleado",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/empleados/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "empleados",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CLIENTE",
+      "item": [
+        {
+          "name": "Obtener clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear cliente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_CLI\": 99,\r\n  \"NUMERO_IDENTIFICACION\": \"CLI-PRUEBA-99\",\r\n  \"ID_TIP_IDE\": 99,\r\n  \"ID_PER\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener cliente por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/clientes/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "clientes",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar cliente",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NUMERO_IDENTIFICACION\": \"CLI-EDITADO-99\",\r\n  \"ID_TIP_IDE\": 99,\r\n  \"ID_PER\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/clientes/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "clientes",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar cliente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PRODUCTO",
+      "item": [
+        {
+          "name": "Obtener productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear producto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_PRO\": 99,\r\n  \"NOMBRE_PRO\": \"PRODUCTO_PRUEBA\",\r\n  \"DESCRIPCION_PRO\": \"DESCRIPCION_PRODUCTO_PRUEBA\",\r\n  \"ID_CAT\": 99,\r\n  \"ID_MAR\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener producto por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/productos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "productos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar producto",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NOMBRE_PRO\": \"PRODUCTO_EDITADO\",\r\n  \"DESCRIPCION_PRO\": \"DESCRIPCION_PRODUCTO_EDITADO\",\r\n  \"ID_CAT\": 99,\r\n  \"ID_MAR\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/productos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "productos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar producto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/productos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "productos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CATALOGO_PRODUCTO",
+      "item": [
+        {
+          "name": "Obtener catalogo de productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear producto en catalogo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_TI\": 99,\r\n  \"ID_PRO\": 99,\r\n  \"PRECIO_VIGENTE_CAT_PRO\": 100.00,\r\n  \"EXISTENCIA_ACTUAL_CAT_PRO\": 50\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener producto de catalogo por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar producto de catalogo",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"PRECIO_VIGENTE_CAT_PRO\": 125.50,\r\n  \"EXISTENCIA_ACTUAL_CAT_PRO\": 40\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar producto de catalogo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "VENTA",
+      "item": [
+        {
+          "name": "Obtener ventas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/ventas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear venta",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_VEN\": 99,\r\n  \"FECHA_VEN\": \"2026-10-16\",\r\n  \"ID_TI\": 99,\r\n  \"ID_EMP\": 99,\r\n  \"ID_CLI\": 99,\r\n  \"ID_ES_VEN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/ventas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener venta por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/ventas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar venta",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"FECHA_VEN\": \"2026-10-17\",\r\n  \"ID_TI\": 99,\r\n  \"ID_EMP\": 99,\r\n  \"ID_CLI\": 99,\r\n  \"ID_ES_VEN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/ventas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar venta",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/ventas/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DESGLOSE_VENTA",
+      "item": [
+        {
+          "name": "Obtener desgloses de venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear desglose de venta",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_VEN\": 99,\r\n  \"ID_PRO\": 99,\r\n  \"CANTIDAD_DES_VEN\": 2,\r\n  \"PRECIO_UNITARIO_DES_VEN\": 100.00,\r\n  \"SUBTOTAL_DES_VEN\": 200.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener desglose de venta por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar desglose de venta",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"CANTIDAD_DES_VEN\": 2,\r\n  \"PRECIO_UNITARIO_DES_VEN\": 110.00,\r\n  \"SUBTOTAL_DES_VEN\": 220.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar desglose de venta",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta/99/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta",
+                "99",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PAGO",
+      "item": [
+        {
+          "name": "Obtener pagos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/pagos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear pago",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID_PAG\": 99,\r\n  \"MONTO_PAG\": 50.00,\r\n  \"ID_MET_PAG\": 99,\r\n  \"ID_VEN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/pagos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener pago por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/pagos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar pago",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"MONTO_PAG\": 60.00,\r\n  \"ID_MET_PAG\": 99,\r\n  \"ID_VEN\": 99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/pagos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar pago",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/pagos/99",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos",
+                "99"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "VISTAS",
+      "item": [
+        {
+          "name": "Obtener ventas por ubicacion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/vistas/ventas-ubicacion",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "vistas",
+                "ventas-ubicacion"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener top productos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/vistas/top-productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "vistas",
+                "top-productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener saldos pendientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/vistas/saldos-pendientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "vistas",
+                "saldos-pendientes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "TRIGGERS",
+      "item": [
+        {
+          "name": "Prueba stock insuficiente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"CANTIDAD_DES_VEN\": 155,\r\n    \"PRECIO_UNITARIO_DES_VEN\": 115.83,\r\n    \"SUBTOTAL_DES_VEN\": 17953.65,\r\n    \"ID_VEN\": 1,\r\n    \"ID_PRO\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Prueba stock valido",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"CANTIDAD_DES_VEN\": 1,\r\n    \"PRECIO_UNITARIO_DES_VEN\": 115.83,\r\n    \"SUBTOTAL_DES_VEN\": 115.83,\r\n    \"ID_VEN\": 1,\r\n    \"ID_PRO\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/desgloses-venta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "desgloses-venta"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verificar stock producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/catalogo-productos/3/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "catalogo-productos",
+                "3",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Primer pago parcial",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ID_PAG\": 9998,\r\n    \"MONTO_PAG\": 623.1,\r\n    \"ID_MET_PAG\": 1,\r\n    \"ID_VEN\": 12\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/pagos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verificar estado venta",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/ventas/12",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas",
+                "12"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Completar pago",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ID_PAG\": 9999,\r\n    \"MONTO_PAG\": 623.1,\r\n    \"ID_MET_PAG\": 1,\r\n    \"ID_VEN\": 12\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/pagos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "pagos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verificar venta pagada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/ventas/12",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "ventas",
+                "12"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
